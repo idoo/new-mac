@@ -50,6 +50,8 @@ brew cask install xscope
 
 ## Web Dev
 ```
+# Make 'Sites' folder
+mkdir ~/Sites
 # Yarn package manager
 brew install yarn
 # PHP package manager
@@ -234,12 +236,6 @@ chmod 600 id_rsa
 chmod 644 id_rsa.pub
 # Remove ssh key passphrase
 ssh-keygen -p
-```
-
-## Make 'Sites' folder
-```
-cd ~
-mkdir Sites
 ```
 
 ## Contacts
