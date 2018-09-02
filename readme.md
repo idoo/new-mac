@@ -1,25 +1,25 @@
 # New computer setup
 
-Xcode, Brew, Casks
+## Xcode, Brew, Casks, Command  Setup
 ```
 # Install Xcode CLI tools (git etc)
 xcode-select --install
-
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 # Install Homebrew cask
 brew tap caskroom/cask
-
+# Mac AppStore installer
+brew install mas
 # Install Zsh
 brew install zsh
-
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 # Homebrew Drivers (for sonos)
 brew tap homebrew/cask-drivers
+```
 
+## Cask apps
+```
 # Install cask apps
 brew cask install 1password
 brew cask install adobe-creative-cloud
@@ -46,22 +46,18 @@ brew cask install spotify
 brew cask install tower
 brew cask install visual-studio-code
 brew cask install xscope
+```
 
-# Mac AppStore installer
-brew install mas
-
+## Web Dev
+```
 # Yarn package manager
 brew install yarn
-
-# Z directory jumper
-brew install z
-
 # PHP package manager
 brew install composer
 ```
 
 ## Wallpaper
-Use Safari and use right click > set as wallpaper to Louie Mantia's [Juxtaposition Wallpaper](http://reserve.louie.land/Wallpapers/Juxtaposition/Juxtaposition%20-%20Desktop.jpg)
+- Open Louie Mantia's [Juxtaposition Wallpaper](http://reserve.louie.land/Wallpapers/Juxtaposition/Juxtaposition%20-%20Desktop.jpg) in Safari and use right click > set as wallpaper to
 
 ## 1Password
 - Open 1Password and sync in via iCloud
@@ -80,6 +76,9 @@ Use Safari and use right click > set as wallpaper to Louie Mantia's [Juxtapositi
 - Enable clipboard history for all types
 - Enable snippets auto expand
 - Change theme to macOS Sierra
+
+## Fonts
+- Install Dank Mono from Dropbox/Sync
 
 ## Chrome
 - Open Chrome and sign in to chrisrowenet
@@ -153,9 +152,6 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.1
 ```
 
-## Enable tabbing through all controls
-`defaults write NSGlobalDomain AppleKeyboardUIMode -int 3`
-
 ## Keyboard
 ```
 # Remove alt char popup bubble when holding a key
@@ -166,6 +162,8 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # Disable automatic capitalisation
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+# Enable tabbing through all controls
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 ```
 
 ## Disable UI transparency
@@ -255,7 +253,6 @@ git config --global core.editor nano
 ```
 
 ## Mac AppStore
-- Install remaining apps from the Mac AppStore
 ```
 mas install 904280696 ## Things3
 mas install 587512244 ## Kaleidoscope 
