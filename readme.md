@@ -18,6 +18,12 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 brew tap homebrew/cask-drivers
 ```
 
+## Zsh Plugins
+```
+nano ~/.zshrc
+```
+- Add 'z' to plugins
+
 ## Cask apps
 ```
 # Install cask apps
