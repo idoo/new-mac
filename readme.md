@@ -299,14 +299,17 @@ mkdir Sites
 Sort by first name
 
 ## Install bash-it
-`git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it`
-
-`~/.bash_it/install.sh`
+```
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+~/.bash_it/install.sh
+```
 
 ## git
-`echo ".DS_Store" >> ~/.gitignore_global`
-
-`git config --global core.excludesfile ~/.gitignore_global`
+```
+echo ".DS_Store" >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+git config --global core.editor nano
+```
 
 ## Mac AppStore
 Install remaining apps from the Mac AppStore
