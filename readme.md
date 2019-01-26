@@ -94,8 +94,11 @@ brew install composer
 
 ## Trackpad
 ```
-# Enable tap to click
+# Enable tap to click for current user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
 ```
 
 ## System
